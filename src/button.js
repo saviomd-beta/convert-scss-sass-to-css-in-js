@@ -1,6 +1,7 @@
 import { buttonSize, boxShadow } from './mixins';
+import { textColor, backgroundColor } from './variables';
 
-const css = `
+const cssString = `
   .cssinjs-btn {
     color: #fff;
     background-color: green;
@@ -10,6 +11,25 @@ const css = `
   }
 `;
 
+const css = {
+  '.cssinjs-btn': {
+      color: textColor,
+      background: backgroundColor
+  }
+};
+
+const toCssString = (css) => {
+  let result = '';
+  for (const selector in css) {
+    result += selector + ' {';
+    for (const property in css[selector]) {
+      result += property + ': ' + css[selector][property] + ';';
+    }
+    result += '}';
+  }
+  return result;
+};
+
 document.head.appendChild(
   document.createElement('style')
-).textContent = css;
+).textContent = toCssString(css);
