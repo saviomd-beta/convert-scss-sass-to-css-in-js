@@ -6,7 +6,12 @@ const css = `
     color: #fff;
     background-color: green;
     margin: 5px;
-    ${buttonSize(paddingYLg, paddingXLg, fontSizeLg, borderRadiusLg)};
+    ${buttonSize({
+      paddingY: paddingYLg,
+      paddingX: paddingXLg,
+      fontSize: fontSizeLg,
+      borderRadius: borderRadiusLg
+    })};
   }
 `;
 
