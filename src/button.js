@@ -1,4 +1,4 @@
-import { buttonSize } from './mixins';
+import { buttonSize, boxShadow } from './mixins';
 
 const css = `
   .cssinjs-btn {
@@ -6,6 +6,7 @@ const css = `
     background-color: green;
     margin: 5px;
     ${buttonSize({paddingY: '50px'})};
+    ${boxShadow('0px 4px 5px #666', '2px 6px 10px #999')};
   }
 `;
 
