@@ -1,7 +1,4 @@
-const paddingY = '7px';
-const paddingX = '10px';
-const baseFontSize = '1rem';
-const borderRadius = '5px';
+import { paddingY, paddingX, baseFontSize, borderRadius } from './variables';
 
 const button = `
   .cssinjs-btn {
