@@ -7,8 +7,12 @@ export default styles => {
     classes[name] = name + '-' + counter++;
     const selector = '.' + classes[name];
     cssString += selector + ' {';
-    for (const property in styles[name]) {
-      cssString += property + ': ' + styles[name][property] + ';';
+    if (typeof styles[name] === 'string') {
+      cssString += styles[name];
+    } else {
+      for (const property in styles[name]) {
+        cssString += property + ': ' + styles[name][property] + ';';
+      }
     }
     cssString += '}';
   }
