@@ -1,4 +1,4 @@
-export const paddingY = '7px';
-export const paddingX = '10px';
-export const baseFontSize = '1rem';
-export const borderRadius = '5px';
+export const paddingYLg = '10px';
+export const paddingXLg = '13px';
+export const fontSizeLg = '1.2rem';
+export const borderRadiusLg = '7px';
