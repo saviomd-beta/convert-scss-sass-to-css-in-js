@@ -1,4 +1,3 @@
-import { paddingYLg, paddingXLg, fontSizeLg, borderRadiusLg } from './variables';
 import { buttonSize } from './mixins';
 
 const css = `
@@ -6,12 +5,7 @@ const css = `
     color: #fff;
     background-color: green;
     margin: 5px;
-    ${buttonSize({
-      paddingY: paddingYLg,
-      paddingX: paddingXLg,
-      fontSize: fontSizeLg,
-      borderRadius: borderRadiusLg
-    })};
+    ${buttonSize({paddingY: '50px'})};
   }
 `;
 
