@@ -1,10 +1,7 @@
-import { paddingY, paddingX, baseFontSize, borderRadius } from './variables';
+import sizes from './sizes';
 
 const button = `
   .cssinjs-btn {
-    padding: ${paddingY} ${paddingX};
-    font-size: ${baseFontSize};
-    border-radius: ${borderRadius};
     color: #fff;
     background-color: green;
   }
@@ -12,4 +9,4 @@ const button = `
 
 document.head.appendChild(
   document.createElement('style')
-).textContent = button;
+).textContent = sizes + button;
